@@ -1,0 +1,345 @@
+/*font-family: 'Cookie', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Water Brush', cursive;*/
+
+/*Custome Nav Styling*/
+body{
+    background-color:#d9e9f3;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+
+.contarea{
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    background-color: #F3D574;
+}
+
+h1{
+    color: white; 
+    font-size:3em;
+    font-family:'Water Brush', cursive;
+}
+
+blockquote{
+    font-size: 1.5em;
+}
+img{
+   width:100%;
+}
+.navstyle{
+    display: flex;
+    padding: 0% 3% 0% 0%;
+    justify-content: end;
+    align-content: end;
+    background-color: #F3D574;
+}
+.navstyle a{
+    display:flex;
+    margin: 0% 0% 0% 0%;
+    color: #80665e;
+    justify-content: end;
+    font-size: 1.25em;
+}
+.navstyle a:hover{
+    background-color: #80665e;
+    color: #F3D574;
+}
+.navstyle a:active{
+    background-color: #80665e;
+    color: #F3D574;
+}
+
+.navtoggler{
+    color: #80665e;
+}
+
+.headerbox{
+    margin: 0em;
+    border: 3px #F3D574 ridge;
+    padding: 3%;
+    width: 100%;
+    height:auto;
+    position:sticky;
+
+    background-color:#A3857B;
+}
+.footerbox{
+    width: 100%;
+    height: 12em;
+    position:sticky;
+    margin: 0em;
+    border: 3px #F3D574 ridge;
+    padding: 2% 0% 0% 0%;
+    color: white;
+    background-color:#A3857B;
+    font-size: 1.5vw;
+    line-height: 2;
+}
+.footerbox ul{
+    list-style-type: none;
+}
+.footerbox a{
+    text-decoration: none;
+    color:white;
+}
+.footerbox a:hover{
+    font-weight: 900;
+    text-decoration: underline;
+}
+.footerbox p{
+    position:absolute;
+    left: 5%;
+    bottom: 1%;
+}
+
+.fieldstyle{
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+
+/*Other on page styles*/
+.heroImg{
+    height: 100%;
+    width: 100%;
+    border: 3px #80665e solid;
+    box-shadow: 2px 2px 5px black;
+}
+
+.specialsbg{
+    border: 3px #80665e solid;
+    padding: 3% 0% 3% 15%;
+    background-image:url(/HTML/NewCafe/Assets/blackboard-v2.jpg);
+    background-color:black;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    background-size:cover;
+    box-shadow: 2px 2px 5px black;
+}
+.specials h2{
+    color:white;
+    font-family:'Fredericka the Great', cursive;
+    font-size:4vw;
+    z-index: 1;
+}
+.specialstxt{
+    font-size:4.5vw;
+    color:white;
+    font-family: 'Cookie', cursive; 
+    list-style-type: none;
+}
+@media(min-width:768px){
+    .specialstxt{
+        font-size:2.5vw;
+    }
+}
+@media(min-width:889px) and (max-width:992px){
+    .specialstxt{
+        font-size:2vw;
+    }
+}
+
+.brownpanel{
+    padding: 4% 5% 2% 5%;
+    background-color: rgb(87,64,59,0.90);
+}
+.brownpanel h2{
+    color:white;
+    line-height: 1.5;
+}
+.brownpanel p{
+    color:white;
+}
+.tablebg{
+    border: 3px #80665e solid;
+    padding:3%;
+    background-image: url(/HTML/NewCafe/Assets/tableging.jpg);
+    background-color:#57403b;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height:100%;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+}
+
+.yellowpanel{
+    padding: 4% 5% 2% 5%;
+    background-color: rgba(243, 213, 116, 0.90);
+    height:100%;
+}
+.yellowpanel h2{
+    color:black;
+    line-height: 1.5;
+}
+.yellowpanel p{
+    color:black;
+}
+.yellowpanel li{
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.outsidebg{
+    border: 3px #80665e solid;
+    padding:3%;
+    background-image:url(/HTML/NewCafe/Assets/summerypark.jpg);
+    background-color:#F3D574;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    height:100%;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+}
+
+.rowHeading{
+    padding: 3%;
+    background-color: #80665e;
+    box-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+}
+.rowHeading h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+.colHeading{
+    display:flexbox;
+    margin: 2.5% 2.5% 0% 2.5%;
+    padding:5%;
+    background-color: #80665e;
+    box-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+}
+.colHeading h2{
+    font-size: 1.75em;
+    color: white;
+    text-align: center;
+    line-height:0em;
+}
+.menuCol{
+    background-color: rgba(85, 49, 16, 0.50);
+}
+.menuCard{
+    display:flexbox;
+    justify-content: center;
+    margin: 2.5%;
+    border:2px dashed #80665e;
+    padding:5%;
+    background-color: #fae481;
+    height: 95%;
+    width: 95%;
+    box-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+    transition:transform 0.75s, box-shadow 1s; 
+}
+.menuCard:hover{
+    margin: 2.5%;
+    border:2px dashed #80665e;
+    padding:5%;
+    background-color: #F3D574;
+    height: 95%;
+    width: 95%;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.5);
+    cursor: pointer;
+    transform:scale(1.050) rotate(1deg);
+}
+.menuImgBox{
+    display:flexbox;
+    margin:5%;
+    width: 90%;
+}
+.menuCard img{
+    display:flexbox;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.menuCard h2{
+    display:flexbox;
+    font-size: 1.75em;
+    color: #57403b;
+}
+.menuCard p{
+    display:flexbox;
+    font-size: 1em;
+}
+
+.btn{
+    margin: 0% 0% 0% 0%;
+    background-color: #80665e;
+    color:#f8ebc1;
+    font-weight: 600;
+    width:95%;
+}
+.btn:hover{
+    background-color: #f8ebc1; 
+    color:#80665e;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.orderBox{
+    display:flexbox;
+    justify-content: center;
+    margin: 2.5%;
+    border:2px dashed #80665e;
+    padding:2.5% 2.5% 2.5% 2.5%;
+    background-color: #FAE381;
+    height: 95%;
+    width: 95%;
+    box-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+}
+.orderImgBox{
+    display:flexbox;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.orderBox h2{
+    display:flexbox;
+    font-size: 1.75em;
+    color: #57403b;
+    font-weight: 800;
+}
+.orderBox p{
+    display:flexbox;
+    padding: 0% 5% 5% 5%;
+    font-size: 1.25em;
+}
+.orderBox form{
+    margin: 0% 5% 0% 10%;
+    font-size: 1.25em;
+}
+.orderBox fieldset{
+    border: 3px #b4a24e groove;
+    padding: 4%;
+}
+.orderBox h3{
+    font-size: 1em;
+    font-weight: 800;
+}
+
+.contactBg{
+    display:flex;
+    margin: 0% 2.5% 2.5% 2.5%;
+    border:2px dashed #80665e;
+    height:60vh;
+    background-color: #FAE381;
+    box-shadow: 2px 2px 4px rgb(0,0,0,0.75);
+
+}
+.contactBg ul{
+    display:flexbox;
+    align-self: center;
+    margin:1em;
+    list-style-type: none;
+    font-size: 2.25em;
+    color: #57403b;
+    line-height: 2em;
+}
+.contactBg iframe{
+    display:flexbox;
+    align-self: center;
+    margin:1em;
+    list-style-type: none;
+    font-size: 2.25em;
+    color: #57403b;
+    line-height: 2em;
+}
+/*just for testing*/

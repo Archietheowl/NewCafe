@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="ncStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fredericka+the+Great&family=Lato&family=Water+Brush&display=swap" rel="stylesheet">
+    
+    <title>Cafe In The Park</title>
+</head>
+<body>
+   
+    <div class="container">     <!--Grid Container-->
+        <div class="row navstyle gx-0">   <!--Main Navigation-->
+            <div class="col">
+            </div>
+            <div class="col">
+                <nav class="navbar navbar-expand-md navstyle">
+                    <div>
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navtoggler"><i class="fa-solid fa-bars"></i></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="ncIndex.html"><i class="fa-solid fa-house-chimney"></i>&nbsp;  Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="false" href="ncMenu.html"><i class="fa-brands fa-readme"></i>&nbsp; Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="false" href="ncContact.html"><i class="fa-solid fa-comments"></i>&nbsp; Contact Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="ncMenu.html" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="ncMenu.html">Menu</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class=dropdown-item href="ncContact.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <header class="row">    <!--Header-->
+            <div class="col">
+                <div class="headerbox">
+                    <h1>Cafe In The Park &nbsp;<i class="fa-solid fa-mug-hot"></i></h1>
+                </div>
+            </div>
+        </header>
+        <div class="row gx-0 yellow">    <!--Heroe Images-->
+            <div class="col-12 col-md-6 contarea">
+                <img class="heroImg" src="/HTML/NewCafe/Assets/citp4-2.jpg"
+                alt="Image of our cafe. Wooden topped tables and chairs. Gabled roof with wooden beams. 
+                Large yellow feature wall with key words written in a range of interesting font styles.">
+            </div>
+            <div class="col-12 col-md-6 specials contarea">
+                <div class="specialsbg">
+                <h2>Specials</h2>                                            
+                <ul class="specialstxt">
+                    <li>Pea and Mint Soup</li>
+                    <li>Minute Steak and fries</li>
+                    <li>Mediterranean Quiche</li>
+                    <li>Gluten Free Fudge Brownie</li>
+                    <li>Popcorn Icecream Sundae</li>
+                </ul>
+                </div>    
+            </div>
+        </div>
+       <div class="row gx-0"> <!--Food Menu Cards--> 
+            <div class="col rowHeading">
+                <h2>Delicous Food Made Fresh Every Day</h2>
+            </div>
+        </div>
+        <div class="row gx-2" id="test1">
+
+        </div>
+        <div class="row gx-2" >
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="card menuCard">
+                    <img class="card-img-top" src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    <div class="card-body">
+                        <h2 class="card-title">Slice of Cake</h2>
+                        <h5 class="card-title">£4.50</h5>
+                        <p class="card-text">A lovely slice of chocolate cake. See specials board for todays freshley baked selection.</p>
+                    </div>
+                    <div class="card-body">
+                        <button onclick="document.location='/HTML/NewCafe/ncMenuDetails.html#cake'" class="btn"> Order</button>
+                    </div>
+                </div>
+                <!--<div class="menuCard"> Cake
+                    <div class="menuImgBox">
+                         <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>
+                    <h2>Slice of Cake</h2>
+                    <h2>£4.50</h2>
+                    <p>A lovely slice of chocolate cake. See specials board for todays freshley baked selection</p>
+                    <button onclick="document.location='/HTML/NewCafe/ncMenuDetails.html#cake'" class="btn"> Order</button>
+                </div>-->
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Baguette-->
+                    <div class="menuImgBox">
+                         <img src="/HTML/NewCafe/Assets/menu/resized/filled-baguette.jpg" alt="Baguette sandwich with a range of meat and salad fillings">
+                    </div>
+                    <h2>Baguette</h2>
+                    <h2>£5.50</h2>
+                    <p>8 inch baguette baked fresh each day. Choose your selection of fresh fillings.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Roll-->
+                    <div class="menuImgBox">
+                         <img src="/HTML/NewCafe/Assets/menu/resized/roll.jpg" alt="Roll sandwich with a range of meet and salad fillings">
+                    </div>
+                    <h2>Roll</h2>
+                    <h2>£5.00</h2>
+                    <p>Soft sesamee seed cob roll baked fresh each day. Choose your selection of fresh fillings.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Sandwhich-->
+                    <div class="menuImgBox">
+                         <img src="/HTML/NewCafe/Assets/menu/resized/sandwhich.jpg" alt="Sandwich of sliced and toasted bread. Filling of guacamole and soft cheese.">
+                    </div>
+                    <h2>Sandwich</h2>
+                    <h2>£4.50</h2>
+                    <p>A closed sandwhich with thick slices of bloomer bread baked fresh each day. Choose your selection of fresh fillings.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+        </div>    
+        <div class="row gx-2">
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Pizza-->
+                    <div class="menuImgBox">
+                         <img src="/HTML/NewCafe/Assets/menu/resized/pizza.jpg" alt="pizza with meat and vegetable toppings">
+                    </div>
+                    <h2>Slice of Pizza</h2>
+                    <h2>£3.50</h2>
+                    <p>Large slice of stone baked pizza. See sepcials board for the days toppings options.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Doughnut-->
+                    <div class="menuImgBox">
+                         <img src="/HTML/NewCafe/Assets/menu/resized/doughnut.jpg" alt="Two ring doughnuts one with chocolate glaze, the other with coffee glaze">
+                    </div>
+                    <h2>Doughnut</h2>
+                    <h2>£3.50</h2>
+                    <p>Choose from our daily selection of filled or glazes doughnuts. </p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Crisps-->
+                    <div class="menuImgBox">
+                         <img src="/HTML/NewCafe/Assets/menu/resized/crisps.jpg" alt="crisps">
+                    </div>
+                    <h2>Crisps</h2>
+                    <h2>£1.20</h2>
+                    <p>Packed of hand cut crunch crisps in a range of natural flavours.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Potato Wedges-->
+                    <div class="menuImgBox">
+                         <img src="/HTML/NewCafe/Assets/menu/resized/potato-wedges.jpg" alt="potato wedges">
+                    </div>
+                    <h2>Potato Wedges</h2>
+                    <h2>£2.00</h2>
+                    <p>Lightly spiced potato wedges with your choice of condiments.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-0">      <!--Drink Menu Cards--> 
+            <div class="col rowHeading"> 
+                <h2>Warming, Refeshing and Tasty Drinks</h2>
+            </div>
+        </div>
+        <div class="row gx-2" >
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Coffee-->
+                    <div class="menuImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/coffee.jpg" alt="cup of coffee with froth and feather pattern">
+                    </div>
+                    <h2>Coffee</h2>
+                    <h2>£1.50</h2>
+                    <p>Cup of coffee freshly brewed. We use fair trade beans roasted and ground locally.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Tea-->
+                    <div class="menuImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/tea.jpg" alt="cup of tea">
+                    </div>
+                    <h2>Tea</h2>
+                    <h2>£1.50</h2>
+                    <p>Choose from our wide selection of teas to suit your taste.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Herbal Tea-->
+                    <div class="menuImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/herbal-tea.jpg" alt="cup of herbal tea with some herbs brewing in the cup">
+                    </div>
+                    <h2>Herbal Tea</h2>
+                    <h2>£1.50</h2>
+                    <p>Wide range of herb infused teas with some of the herbs coming from the park's own herb garden.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+                <div class="menuCard"><!--Iced Coffee-->
+                    <div class="menuImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/iced-coffee.jpg" alt="Iced coffee in tall glass with frothy top and heart shaped waffle biscuit">
+                    </div>
+                    <h2>Iced Coffee</h2>
+                    <h2>£3.00</h2>
+                    <p>Refreshing and delicious blended iced coffee with your choice of flavoured syrup.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-2" >
+            <div class="col-12 col-md-6 col-lg-3  text-center">
+                <div class="menuCard"><!--Milkshake-->
+                    <div class="menuImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/milkshake.jpg" alt="four glasses of milkshake. Chocolate, vanilla, strabery and cookies.">
+                    </div>
+                    <h2>Milkshake</h2>
+                    <h2>£4.50</h2>
+                    <p>Delicious thick and luxurious icecream milkshakes in a range of flavours.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3  text-center">
+                <div class="menuCard"><!--Fruit Juice-->
+                    <div class="menuImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/fruit-juice.jpg" alt="three glases of fresh fruit juice. apple, raspberry  and mango.">
+                    </div>
+                    <h2>Fruit Juice</h2>
+                    <h2>£1.20</h2>
+                    <p>Selection of fresh fruit juices and smoothes. Made to order on site with fresh fruit.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3  text-center">
+                <div class="menuCard"><!--Soft Drink-->
+                    <div class="menuImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/coke.jpg" alt="can of fizzy drink (CocaCola)">
+                    </div>
+                    <h2>Soft Drink</h2>
+                    <h2>£1.50</h2>
+                    <p>Selection of soft drinks.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3  text-center">
+                <div class="menuCard"><!--Water-->
+                    <div class="menuImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/water.jpg" alt="plastic bottle of water">
+                    </div>
+                    <h2>Bottled Water</h2>
+                    <h2>£1.00</h2>
+                    <p>English sill mineral water in a bottle.</p>
+                    <button type="button" class="btn">Order</button>
+                </div>
+            </div>
+        </div>
+        <footer class="row footerbox">
+            <div class="col">
+                <ul>
+                    <li><a href="/HTML/NewCafe/ncIndex.html">&nbsp;Home</a></li>
+                    <li><a href="/HTML/NewCafe/ncMenu.html">&nbsp;Menu</a></li>
+                    <li><a href="/HTML/NewCafe/ncContact.html">&nbsp;Contact Us</a></li>
+                </ul>
+                <p>&#169 2022 Adam Gordon </p>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><i class="fa-brands fa-twitter"></i>&nbsp; &nbsp;Twiter</li>
+                    <li><i class="fa-brands fa-facebook"></i>&nbsp; Facebook</li>
+                    <li><i class="fa-brands fa-instagram-square"></i>&nbsp; Instagram</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i>&nbsp; 01895 232 323</li>
+                    <li><i class="fa-solid fa-at"></i>&nbsp; <a href="mailto:info@cafeinthepark.com">info@cafeinthepark.com</a></li>
+                </ul>
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <label for="newsletter">Sign up to our newsletter</label>
+                    <input class=fieldstyle type="text" id="newsletter" name="newsletter">
+                    <input class="btnstyle" type="submit" value="Submit"> 
+                </form>
+            </div>
+        </footer>
+    <script type="text/javascript" src="/HTML/NewCafe/ncScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/92c9c14542.js" crossorigin="anonymous"></script>
+</body>
+</html>

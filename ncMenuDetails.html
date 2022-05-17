@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="ncStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fredericka+the+Great&family=Lato&family=Water+Brush&display=swap" rel="stylesheet">
+    
+    <title>Cafe In The Park</title>
+</head>
+<body>
+   
+    <div class="container">     <!--Grid Container-->
+        <div class="row navstyle gx-0">   <!--Main Navigation-->
+            <div class="col">
+            </div>
+            <div class="col">
+                <nav class="navbar navbar-expand-md navstyle">
+                    <div>
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navtoggler"><i class="fa-solid fa-bars"></i></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="ncIndex.html"><i class="fa-solid fa-house-chimney"></i>&nbsp;  Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="false" href="ncMenu.html"><i class="fa-brands fa-readme"></i>&nbsp; Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="false" href="ncContact.html"><i class="fa-solid fa-comments"></i>&nbsp; Contact Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="ncMenu.html" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="ncMenu.html">Menu</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class=dropdown-item href="ncContact.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <header class="row">    <!--Header-->
+            <div class="col">
+                <div class="headerbox">
+                    <h1>Cafe In The Park &nbsp;<i class="fa-solid fa-mug-hot"></i></h1>
+                </div>
+            </div>
+        </header>
+        <div class="row gx-0 yellow">    <!--Heroe Images-->
+            <div class="col-12 col-md-6 contarea">
+                <img class="heroImg" src="/HTML/NewCafe/Assets/citp4-2.jpg"
+                alt="Image of our cafe. Wooden topped tables and chairs. Gabled roof with wooden beams. 
+                Large yellow feature wall with key words written in a range of interesting font styles.">
+            </div>
+            <div class="col-12 col-md-6 specials contarea">
+                <div class="specialsbg">
+                <h2>Specials</h2>                                            
+                <ul class="specialstxt">
+                    <li>Pea and Mint Soup</li>
+                    <li>Minute Steak and fries</li>
+                    <li>Mediterranean Quiche</li>
+                    <li>Gluten Free Fudge Brownie</li>
+                    <li>Popcorn Icecream Sundae</li>
+                </ul>
+                </div>    
+            </div>
+        </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Cake Order--><!--Expanded details and order form-->
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <div>
+                        <h2 id="cake">Slice of Cake</h2>
+                        <div class="orderImgBox">
+                            <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                        </div>       
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6  col-md-3">
+                    <div class="text-center">
+                        <h2>£4.50</h2>
+                    </div>
+                    <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+                </div>
+                <div class="col-12 col-sm-12  col-md-6 text-center">
+                    <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                        <fieldset>
+                            <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                            <select name="cakeChoice" id="cakeChoice">
+                                <option value="default">Chocolate</option>
+                                <option value="vicSponge">Victoria Sponge</option>
+                                <option value="lemDriz">Lemon Drizzle</option>
+                                <option value="cofCake">Coffee Cake</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                            <select name="cakeChoice" id="cakeChoice">
+                                <option value="default">On its own</option>
+                                <option value="vicSponge">Ice cream</option>
+                                <option value="lemDriz">Cream</option>
+                            </select>  
+                            <br>
+                            <br>
+                            <h3>Gluten Free:</h3>
+                            <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                            <input type="radio" id="gFreeYes" name="gluten">
+                            <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                            <input type="radio" id="gFreeNo" name="gluten">
+                            <br>
+                            <br>
+                            <input type="submit" class="btn" value="Add to Order">
+                        </fieldset>
+                        
+                    </form>
+            </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Baguette Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="baguette">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Roll Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div> 
+        <div class="row gx-2 orderBox" > <!--Sandwich Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div>
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+        </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Pizza Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Doughnut Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Crisps Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div>
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+        </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Potato Wedges Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Coffee Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div> 
+        <div class="row gx-2 orderBox" > <!--Tea Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div>
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+        </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Herbal Tea Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Iced Coffee Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Milkshake Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div> 
+        <div class="row gx-2 orderBox" > <!--Fruit Juice Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div>
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+        </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Soft Drink Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row gx-2 orderBox" > <!--Water Order-->
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div><!--Cake-->
+                    <h2 id="cake">Slice of Cake</h2>
+                    <div class="orderImgBox">
+                        <img src="/HTML/NewCafe/Assets/menu/resized/cake-slice.jpg" alt="slice of chocolate cake">
+                    </div>       
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-3">
+                <div class="text-center">
+                    <h2>£4.50</h2>
+                </div>
+                <p>Delicoius selection of cakes freshley baked each day. Choose to have it on it's own, with cream or a scoop of vanilla ice cream. </p>
+            </div>
+            <div class="col-12 col-sm-12  col-md-6 text-center">
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <fieldset>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Chose your cake from the list:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">Chocolate</option>
+                            <option value="vicSponge">Victoria Sponge</option>
+                            <option value="lemDriz">Lemon Drizzle</option>
+                            <option value="cofCake">Coffee Cake</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="cakeChoice" id="cakeChoice"><h3>Want anything with that:</h3></label>
+                        <select name="cakeChoice" id="cakeChoice">
+                            <option value="default">On its own</option>
+                            <option value="vicSponge">Ice cream</option>
+                            <option value="lemDriz">Cream</option>
+                        </select>  
+                        <br>
+                        <br>
+                        <h3>Gluten Free:</h3>
+                        <label for="gFreeYes" id="gFreeYes">Yes:</label>
+                        <input type="radio" id="gFreeYes" name="gluten">
+                        <label for="gFreeNo" id="gFreeNo"> &nbsp; &nbsp; No:</label>
+                        <input type="radio" id="gFreeNo" name="gluten">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Add to Order">
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
+
+        
+        <footer class="row footerbox">
+            <div class="col">
+                <ul>
+                    <li><a href="/HTML/NewCafe/ncIndex.html">&nbsp;Home</a></li>
+                    <li><a href="/HTML/NewCafe/ncMenu.html">&nbsp;Menu</a></li>
+                    <li><a href="/HTML/NewCafe/ncContact.html">&nbsp;Contact Us</a></li>
+                </ul>
+                <p>&#169 2022 Adam Gordon </p>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><i class="fa-brands fa-twitter"></i>&nbsp; &nbsp;Twiter</li>
+                    <li><i class="fa-brands fa-facebook"></i>&nbsp; Facebook</li>
+                    <li><i class="fa-brands fa-instagram-square"></i>&nbsp; Instagram</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i>&nbsp; 01895 232 323</li>
+                    <li><i class="fa-solid fa-at"></i>&nbsp; <a href="mailto:info@cafeinthepark.com">info@cafeinthepark.com</a></li>
+                </ul>
+                <form action="/HTML/NewCafe/ncOrderConf.html" target="_blank">
+                    <label for="newsletter">Sign up to our newsletter</label>
+                    <input class=fieldstyle type="text" id="newsletter" name="newsletter">
+                    <input class="btnstyle" type="submit" value="Submit"> 
+                </form>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/92c9c14542.js" crossorigin="anonymous"></script>
+</body>
+</html>
